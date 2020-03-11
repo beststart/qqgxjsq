@@ -1,0 +1,12 @@
+<view>
+<view>使用说明：</view>
+<view>↻ 重置计算器</view>
+<view>← 删除一层关系</view>
+<view>⇋ 切换称呼</view>
+<view>♥ 给我点赞</view>
+<view>= 计算结果</view>
+</view>
+
+<view>
+当前被赞次数：{{loveCount}}
+</view>

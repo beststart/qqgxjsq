@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="appellation">
+    <view class="app-1">
+      <text>
+        {{mine}}称呼{{appMsg1}}
+      </text>
+    </view>
+    <view class="app-2">{{appMsg2}}</view>
+    <view class="app-3">
+      <text selectable>{{appMsg3}}</text>
+    </view>
+  </view>
+  <view class="sex">
+    <text>我是：</text>
+    <label>
+      <text>男</text>
+      <switch checked="{{checked}}" bindchange="changeSex"></switch>
+      <text>女</text>
+    </label>
+  </view>
+  <view class="calculator">
+    <view hover-class="view-active" data-text="父亲" data-sex="1" bindtap="calRelation">父亲</view>
+    <view hover-class="view-active" data-text="母亲" data-sex="0" bindtap="calRelation">母亲</view>
+
+    <view wx:if="{{selectSex==1}}" data-text="妻子" data-sex="0" bindtap="calRelation" hover-class="view-active">妻子</view>
+    <view wx:if="{{selectSex==0}}" class="disabled">妻子</view>
+    
+    <view hover-class="view-active" bindtap="reload">↻</view>
+    <view hover-class="view-active" data-text="哥哥" data-sex="1" bindtap="calRelation">哥哥</view>
+    <view hover-class="view-active" data-text="姐姐" data-sex="0" bindtap="calRelation">姐姐</view>
+    
+    <view wx:if="{{selectSex==0}}" data-text="丈夫" data-sex="1" bindtap="calRelation" hover-class="view-active">丈夫</view>
+    <view wx:if="{{selectSex==1}}" class="disabled">丈夫</view>
+
+    <view hover-class="view-active" bindtap="backRelation">←</view>
+    <view hover-class="view-active" data-text="弟弟" data-sex="1" bindtap="calRelation">弟弟</view>
+    <view hover-class="view-active" data-text="妹妹" data-sex="0" bindtap="calRelation">妹妹</view>
+    <view hover-class="view-active" bindtap="love">♥</view>
+    <view hover-class="view-active" bindtap="reverse">⇋</view>
+    <view hover-class="view-active" data-text="儿子" data-sex="1" bindtap="calRelation">儿子</view>
+    <view hover-class="view-active" data-text="女儿" data-sex="0" bindtap="calRelation">女儿</view>
+    <view hover-class="view-active" bindtap="toAbout">?</view>
+    <view hover-class="view-active" bindtap="getResult">=</view>
+  </view>
+</view>

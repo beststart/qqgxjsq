@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/about/about",
+    "pages/relation/relation"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#797979",
+    "navigationBarTitleText": "亲戚关系计算器",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "backgroundColor": "#797979",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"称呼",
+      "iconPath":"images/计算机.png",
+      "selectedIconPath":"images/计算机.png"
+    },{
+      "pagePath":"pages/relation/relation",
+      "text":"关系",
+      "iconPath":"images/通讯录.png",
+      "selectedIconPath":"images/通讯录.png"
+    },{
+      "pagePath":"pages/logs/logs",
+      "text":"记录",
+      "iconPath":"images/日历.png",
+      "selectedIconPath":"images/日历.png"
+    }]
+  }
+}

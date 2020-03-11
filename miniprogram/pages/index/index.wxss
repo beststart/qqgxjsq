@@ -1,0 +1,41 @@
+.appellation{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.sex{
+  padding-left: 15px;
+}
+.calculator{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.calculator view{
+  flex: 0 0 auto;
+  width: 25%;
+  text-align: center;
+  padding: 40rpx 0;
+  font-size: 30rpx;
+}
+.view-active{
+  background-color: rgba(24, 3, 3, 0.651);
+}
+.disabled{
+  color: rgba(24, 3, 3, 0.333);
+}
+.app-1{
+  padding-left: 15px;
+  flex: 1;
+}
+.app-2{
+  padding-right: 15px;
+  text-align: right;
+}
+.app-3{
+  padding: 80px 15px 80px;
+  text-align: right;
+}

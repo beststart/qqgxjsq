@@ -1,0 +1,9 @@
+.log-list {
+  margin: 10px;
+  padding: 5px;
+  border-bottom: 1px dashed whitesmoke;
+}
+.log-item {
+  margin: 10rpx;
+  color: whitesmoke;
+}

@@ -1,0 +1,15 @@
+<!--logs.wxml-->
+<view class="log-list" wx:if="{{show}}">
+  <text class="log-item">暂无记录</text>
+</view>
+<view class="log-list" wx:for="{{logs}}" wx:for-item="log">
+    <view>
+      <text class="log-item">查询时间：{{log.time}}</text>
+    </view>
+    <view>
+      <text class="log-item">查询条件：{{log.search}}</text>
+    </view>
+    <view>
+      <text class="log-item">查询结果：{{log.result}}</text>
+    </view>
+</view>

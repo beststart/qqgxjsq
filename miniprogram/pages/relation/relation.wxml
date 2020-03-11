@@ -1,0 +1,18 @@
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_vcode">
+    <view class="weui-cell__bd">
+      <input class="weui-input" type="text" value="{{val}}" bindinput="getValue" placeholder="请输入称呼，例如：姑姑" />
+    </view>
+    <view class="weui-cell__ft">
+      <view class="weui-vcode-btn" bindtap="getRelation">查询关系</view>
+    </view>
+  </view>
+</view>
+<view>
+  <view wx:if="{{show}}" style="color:whitesmoke">
+    <view>关系：</view>
+    <view>
+      <text selectable>{{relation}}</text>
+    </view>
+  </view>
+</view>
